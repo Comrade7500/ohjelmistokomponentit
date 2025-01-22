@@ -1,0 +1,21 @@
+
+[
+    {
+        "id":1,
+        "nimi":"mansikka",
+        "hinta":2,
+        "kuva":"mansikka.png"
+    },
+    {
+        "id":2,
+        "nimi":"mustikka",
+        "hinta":3,
+        "kuva":"mustikka.png"
+    },
+        {
+        "id":3,
+        "nimi":"vadelma",
+        "hinta":3,
+        "kuva":"vadelma.png"
+    }
+]
