@@ -5,5 +5,6 @@ function Hello(props) {
       <p>Heippa {props.name}!</p>
     )
 }
- 
+
+
 export default Hello
