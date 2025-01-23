@@ -7,10 +7,15 @@ import OpiskelijaTiedot from './OpiskelijaTiedot.jsx'
 
 
 function App() {
+  const opiskelija = {
+    nimi: "Matti Meikäläinen",
+    ika: 16,
+    kurssi: "Reactin perusteet",
+  };
   return(
     <div>
       <Hello name="Johannes"/>
-      <OpiskelijaTiedot />
+      <OpiskelijaTiedot opiskelija={opiskelija} />
     </div>
   )
 }
