@@ -31,6 +31,7 @@ class Varastokerros{
 
     async haeKaikki(){
         return await this.#lukija.lueVarasto(this.#varastopolku);
+        return tiedot.filter(alkio => Object.keys(alkio).length > 0);
     }
 
     async hae(avain,arvo){
