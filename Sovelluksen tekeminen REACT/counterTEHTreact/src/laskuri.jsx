@@ -1,31 +1,11 @@
 import * as React from 'react';
+import CounterDisplay from './CounterDisplay';
+import Kasvatus from './Kasvatus';
+import Nollaus from './Nollaus';
+import TuplaKasvatus from './TuplaKasvatus';
+import Vahennys from './Vahennys';
 
-
-function CounterDisplay({ count }) {
-  return <p>Nykyinen arvo: {count}</p>;
-}
-
-
-function Kasvatus({ onClick }) {
-  return <button onClick={onClick}>Kasvata Lukemaa</button>;
-}
-
-
-function Vahennys({ onClick }) {
-  return <button onClick={onClick}>Vähennä Lukemaa</button>;
-}
-
-
-function Nollaus({ onClick }) {
-  return <button onClick={onClick}>Nollaa</button>;
-}
-
-
-function TuplaKasvatus({ onClick }) {
-  return <button onClick={onClick}>Tuplakasvatus</button>;
-}
-
-function App() {
+function Counter() {
   const [count, setCount] = React.useState(0);
 
   const laskuri = () => setCount(count + 1);
@@ -35,7 +15,7 @@ function App() {
 
   return (
     <div>
-      <CounterDisplay count={count} />
+      <CounterDisplay count={count} /> {/* This was missing an import */}
       <Kasvatus onClick={laskuri} />
       <Vahennys onClick={vahennys} />
       <Nollaus onClick={nollaus} />
@@ -44,4 +24,4 @@ function App() {
   );
 }
 
-export default App;
+export default Counter;
