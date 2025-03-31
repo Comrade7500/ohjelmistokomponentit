@@ -1,0 +1,9 @@
+.haku {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.haku select {
+    padding: 10px;
+}

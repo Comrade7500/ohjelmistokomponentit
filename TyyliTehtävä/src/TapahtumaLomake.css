@@ -1,0 +1,14 @@
+.tapahtuma-lomake {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.tapahtuma-lomake input,
+.tapahtuma-lomake select,
+.tapahtuma-lomake button {
+    margin: 5px;
+    padding: 10px;
+    border-radius: 10px;
+}

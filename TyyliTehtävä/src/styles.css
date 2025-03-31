@@ -1,0 +1,43 @@
+  .app-container {
+      text-align: center;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    
+
+
+    .tapahtuma-lomake input,
+    .tapahtuma-lomake select,
+    .tapahtuma-lomake button {
+      margin: 5px;
+      padding: 10px;
+    }
+    
+    .tapahtuma-lista {
+      margin-top: 20px;
+    }
+    
+    .tapahtuma {
+      border: 1px solid black;
+      padding: 10px;
+      margin: 10px auto;
+      width: 300px;
+      border-radius: 5px;
+    }
+    
+    .tapahtuma-Työ {
+      background-color: rgb(144, 205, 225);
+    }
+    
+    .tapahtuma-Vapaa-aika {
+      background-color: rgb(80, 230, 80);
+    }
+    
+    .tapahtuma-Opiskelu {
+      background-color: rgb(239, 89, 89);
+    }
+    
+    .haku select {
+      margin: 10px;
+      padding: 10px;
+    }
