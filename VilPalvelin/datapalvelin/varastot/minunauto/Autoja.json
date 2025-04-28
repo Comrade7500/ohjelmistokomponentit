@@ -1,0 +1,101 @@
+
+    [
+        {
+          "id": 1,
+          "hinta": 15000,
+          "nimi": "Kottero",
+          "malli": "gold",
+          "valmistusvuosi": 2012,
+          "optiot": [
+            "korjaussetti",
+            "kello",
+            "koukku",
+            "takuu",
+            "tutka"
+          ],
+          "lisätiedot": {
+            "voimanlähde": "Bensiini"
+          }
+        },
+        {
+          "id": 3,
+          "hinta": 25000,
+          "nimi": "Hoppa",
+          "malli": "VIP",
+          "valmistusvuosi": 2010,
+          "optiot": [
+            "koukku",
+            "nopeusmittari",
+            "kahvinlämmitin",
+            "korjaussetti",
+            "takuu"
+          ],
+          "lisätiedot": {
+            "voimanlähde": "työntövoima"
+          }
+        },
+        {
+          "id": 6,
+          "hinta": 123000,
+          "nimi": "Menopeli",
+          "malli": "GT",
+          "valmistusvuosi": 2010,
+          "optiot": [
+            "kello",
+            "kahvinlämmitin",
+            "tutka"
+          ],
+          "lisätiedot": {
+            "voimanlähde": "hybridi"
+          }
+        },
+        {
+          "id": 4,
+          "hinta": 4000,
+          "nimi": "Biili",
+          "malli": "XL",
+          "valmistusvuosi": 2015,
+          "optiot": [
+            "takuu",
+            "kello",
+            "tutka",
+            "koukku"
+          ],
+          "lisätiedot": {
+            "voimanlähde": "sähkö"
+          }
+        },
+        {
+          "id": 2,
+          "hinta": 36000,
+          "nimi": "Kilpuri",
+          "malli": "VIP",
+          "valmistusvuosi": 2017,
+          "optiot": [
+            "koukku",
+            "takuu",
+            "tutka",
+            "nopeusmittari"
+          ],
+          "lisätiedot": {
+            "voimanlähde": "kaasu"
+          }
+        },
+        {
+          "id": 5,
+          "hinta": 25000,
+          "nimi": "Ajokki",
+          "malli": "XL",
+          "valmistusvuosi": 2005,
+          "optiot": [
+            "kello",
+            "kahvinlämmitin",
+            "nopeusmittari",
+            "koukku",
+            "korjaussetti"
+          ],
+          "lisätiedot": {
+            "voimanlähde": "vety"
+          }
+        }
+      ]

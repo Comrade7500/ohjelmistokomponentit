@@ -1,0 +1,11 @@
+{
+    "asetustiedostokansio":"asetustiedostot",
+    "kirjasto":{
+        "kansio":"kirjasto",
+        "varastokerros":"varastokerros.js",
+        "varastokasittelija":"varastokasittelija.js"
+    },
+    "varastot":{
+        "kansio":"varastot"
+    }
+}

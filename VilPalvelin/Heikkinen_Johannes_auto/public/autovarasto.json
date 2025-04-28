@@ -1,0 +1,49 @@
+{
+    "cars": [
+        {
+            "id": 1,
+            "price": 25000,
+            "name": "Toyota",
+            "model": "Camry",
+            "year": 2020,
+            "options": ["Air Conditioning", "Navigation System", "Bluetooth"],
+            "details": "A reliable sedan with great fuel efficiency."
+        },
+        {
+            "id": 2,
+            "price": 30000,
+            "name": "Honda",
+            "model": "Accord",
+            "year": 2021,
+            "options": ["Leather Seats", "Sunroof", "Backup Camera"],
+            "details": "A spacious sedan with advanced safety features."
+        },
+        {
+            "id": 3,
+            "price": 35000,
+            "name": "Ford",
+            "model": "Mustang",
+            "year": 2022,
+            "options": ["Sport Package", "Premium Sound System"],
+            "details": "A classic American muscle car with powerful performance."
+        },
+        {
+            "id": 4,
+            "price": 28000,
+            "name": "Chevrolet",
+            "model": "Malibu",
+            "year": 2019,
+            "options": ["Remote Start", "Apple CarPlay"],
+            "details": "A comfortable sedan with a smooth ride."
+        },
+        {
+            "id": 5,
+            "price": 32000,
+            "name": "Nissan",
+            "model": "Altima",
+            "year": 2021,
+            "options": ["All-Wheel Drive", "Heated Seats"],
+            "details": "A stylish sedan with excellent handling."
+        }
+    ]
+}

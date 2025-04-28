@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "nimi": "Mansikka",
+        "hinta": 2,
+        "kuva": "mansikka.png"
+    },
+    {
+        "id": 2,
+        "nimi": "Mustikka",
+        "hinta": 3,
+        "kuva": "mustikka.png"
+    },
+    {
+        "id": 3,
+        "nimi": "Vadelma",
+        "hinta": 3,
+        "kuva": "vadelma.png"
+    },
+    {
+        "id": 4,
+        "nimi": "Suklaa",
+        "hinta": 2,
+        "kuva": "suklaa.png"
+    },
+    {
+        "id": 5,
+        "nimi": "Toffee",
+        "hinta": 3,
+        "kuva": "toffee.png"
+    }
+]

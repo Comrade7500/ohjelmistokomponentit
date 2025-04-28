@@ -1,0 +1,7 @@
+{
+  "varastotiedosto": "Autoja.json",
+  "perusavain": "id",
+  "hakuavaimet": ["id", "merkki"],
+  "resurssi": "autoja",
+  "kuvakansio": "kuvat"
+}
