@@ -9,10 +9,20 @@ body {
 header {
     background: #35424a;
     color: #ffffff;
-    padding: 20px 0;
+    padding: 10px 0;
     text-align: center;
-    font-size: 1.5em;
+    margin-bottom: 20px; /* Lisää etäisyyttä navigaation ja muun sisällön väliin */
+}
+
+header nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 10px;
     font-weight: bold;
+}
+
+header nav a:hover {
+    text-decoration: underline;
 }
 
 .container {

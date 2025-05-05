@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import CarDetails from './components/CarDetails';
-import ShoppingCart from './components/ShoppingCart';
+import { Routes, Route, Link } from 'react-router-dom';
+import Home from './components/Home';
+import ShoppingCartPage from './components/ShoppingCartPage';
 import './styles/app.css';
 
 function App() {
@@ -8,10 +9,16 @@ function App() {
     const [cart, setCart] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:3003/autoja') // Päivitä oikea URL
-            .then((res) => res.json())
+        fetch('http://localhost:3003/autoja') // Oikea URL
+            .then((res) => {
+                if (!res.ok) {
+                    throw new Error(`HTTP error! status: ${res.status}`);
+                }
+                return res.json();
+            })
             .then((data) => {
-                setCars(data || []); 
+                console.log('Fetched data:', data); // Debugging
+                setCars(data || []); // Aseta autot tilaan
             })
             .catch((err) => console.error('Virhe tietojen haussa:', err));
     }, []);
@@ -34,13 +41,15 @@ function App() {
 
     return (
         <div className="app">
-            <h1>Autokauppa</h1>
-            <div className="car-list">
-                {cars.map(car => (
-                    <CarDetails key={car.id} car={car} addToCart={addToCart} />
-                ))}
-            </div>
-            <ShoppingCart cart={cart} removeFromCart={removeFromCart} />
+            <header>
+                <nav>
+                    <Link to="/">Etusivu</Link> | <Link to="/ostoskori">Ostoskori</Link>
+                </nav>
+            </header>
+            <Routes>
+                <Route path="/" element={<Home cars={cars} addToCart={addToCart} />} />
+                <Route path="/ostoskori" element={<ShoppingCartPage cart={cart} removeFromCart={removeFromCart} />} />
+            </Routes>
         </div>
     );
 }
