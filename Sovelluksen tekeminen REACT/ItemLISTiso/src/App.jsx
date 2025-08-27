@@ -1,28 +1,20 @@
-import React, { useState } from "react";
+import React from "react";
 import Header from "./header";
 import ItemList from "./itemlist";
 import ShoppingForm from "./shoppinglist";
-import "./App.css"; // Lisää tyylit
+import { ShoppingProvider } from "./shoppingcontext";
+import "./App.css";
 
 const App = () => {
-  const [items, setItems] = useState([]);
-
-  const addItem = (item) => {
-    setItems([...items, item]);
-  };
-
-  const deleteItem = (index) => {
-    const updatedItems = items.filter((_, i) => i !== index);
-    setItems(updatedItems);
-  };
-
   return (
-    <div className="container">
-      <Header />
-      <h1>Tuotteet</h1>
-      <ShoppingForm onAddItem={addItem} />
-      <ItemList items={items} onDeleteItem={deleteItem} />
-    </div>
+    <ShoppingProvider>
+      <div className="container">
+        <Header />
+        <h1>Tuotteet</h1>
+        <ShoppingForm />
+        <ItemList />
+      </div>
+    </ShoppingProvider>
   );
 };
 

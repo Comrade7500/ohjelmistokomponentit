@@ -1,12 +1,15 @@
 import React from "react";
+import { useShopping } from "./shoppingcontext";
 
-const ItemList = ({ items, onDeleteItem }) => {
+const ItemList = () => {
+  const { items, deleteItem } = useShopping();
+
   return (
     <ul>
       {items.map((item, index) => (
         <li key={index}>
           {item}
-          <span onClick={() => onDeleteItem(index)}>❌</span>
+          <span onClick={() => deleteItem(index)}>❌</span>
         </li>
       ))}
     </ul>
