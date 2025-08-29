@@ -1,11 +1,12 @@
-import Counter from './laskuri.jsx'
-import * as React from 'react'
+import Counter from './laskuri.jsx';
+import * as React from 'react';
 
-function laskurit() {
-  return(
+function App() {
+  return (
     <div>
-      <Counter/>
+      <Counter />
     </div>
-  ) 
+  );
 }
-export default laskurit
+
+export default App;

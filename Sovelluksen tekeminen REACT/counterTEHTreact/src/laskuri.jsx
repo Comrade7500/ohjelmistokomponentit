@@ -2,24 +2,36 @@ import * as React from 'react';
 import CounterDisplay from './CounterDisplay';
 import Kasvatus from './Kasvatus';
 import Nollaus from './Nollaus';
-import TuplaKasvatus from './TuplaKasvatus';
 import Vahennys from './Vahennys';
+import TuplaKasvatus from './TuplaKasvatus';
+
+const initialState = { laskuri: 0 };
+
+function reducer(state, action) {
+  switch (action.type) {
+    case 'KASVATA':
+      return { laskuri: state.laskuri + 1 };
+    case 'VAHENNA':
+      return { laskuri: state.laskuri - 1 };
+    case 'NOLLAA':
+      return { laskuri: 0 };
+    case 'TUPLA_KASVATUS':
+      return { laskuri: state.laskuri + 2 };
+    default:
+      return state;
+  }
+}
 
 function Counter() {
-  const [count, setCount] = React.useState(0);
-
-  const laskuri = () => setCount(count + 1);
-  const vahennys = () => setCount(count - 1);
-  const nollaus = () => setCount(0);
-  const tuplaKasvatus = () => setCount(count + 2);
+  const [state, dispatch] = React.useReducer(reducer, initialState);
 
   return (
     <div>
-      <CounterDisplay count={count} /> {/* This was missing an import */}
-      <Kasvatus onClick={laskuri} />
-      <Vahennys onClick={vahennys} />
-      <Nollaus onClick={nollaus} />
-      <TuplaKasvatus onClick={tuplaKasvatus} />
+      <CounterDisplay count={state.laskuri} />
+      <Kasvatus onClick={() => dispatch({ type: 'KASVATA' })} />
+      <Vahennys onClick={() => dispatch({ type: 'VAHENNA' })} />
+      <Nollaus onClick={() => dispatch({ type: 'NOLLAA' })} />
+      <TuplaKasvatus onClick={() => dispatch({ type: 'TUPLA_KASVATUS' })} />
     </div>
   );
 }
